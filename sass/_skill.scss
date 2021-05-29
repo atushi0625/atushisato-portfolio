@@ -1,0 +1,45 @@
+/*--------------------------------
+ Skill
+---------------------------------*/
+.skill {
+     margin-bottom: 120px;
+}
+
+.skill-list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     margin-bottom: -50px;
+}
+
+.skill-item {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     width: 48%;
+     margin-bottom: 50px;
+}
+
+.skill-img {
+     width: 60px;
+     height: auto;
+     margin-right: 35px;
+}
+
+.flex {
+     justify-content: center;
+     display: flex;
+}
+
+.skill-body {
+     flex: 1;
+}
+
+.skill-name {
+     margin-bottom: 3px;
+     font-size: 1.2rem;
+}
+
+.skill-text {
+     font-weight: bold;
+}

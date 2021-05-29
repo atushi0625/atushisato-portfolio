@@ -1,0 +1,30 @@
+/*--------------------------------
+ ページトップ
+---------------------------------*/
+.page-top {
+     font-weight: bold;
+     padding: 10px;
+     cursor: pointer;
+     text-align: center;
+     background-color: #4c4c4c;
+}
+
+.page-top .material-icons-outlined {
+     vertical-align: bottom;
+     color: #fff;
+}
+
+/*--------------------------------
+    フッター
+   ---------------------------------*/
+.footer {
+     padding: 30px;
+     background-color: #333;
+}
+
+.copyright {
+     font-size: 1rem;
+     text-align: center;
+     color: #fff;
+     text-transform: uppercase;
+}

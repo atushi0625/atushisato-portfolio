@@ -1,0 +1,110 @@
+/*--------------------------------
+ Service
+---------------------------------*/
+$pc: 1024px; // PC
+$tab: 768px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+     @media (max-width: ($pc)) {
+          @content;
+     }
+}
+
+@mixin tab {
+     @media (max-width: ($tab)) {
+          @content;
+     }
+}
+
+@mixin sp {
+     @media (max-width: ($sp)) {
+          @content;
+     }
+}
+
+
+
+
+.service-container {
+     background: rgba(255, 255, 255, 0.6);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 40px 0;
+
+     p {
+          padding-top: 30px;
+          font-size: 1.3rem;
+          font-weight: bold;
+
+          @include tab {
+               font-size: 1rem;
+          }
+     }
+}
+
+.service {
+     background-image: url(/img/service-bg.jpg);
+     background-size: cover;
+     background-position: center;
+     width: 100vw;
+
+
+}
+
+.service-title {
+     font-size: 2.3rem;
+
+     br {
+          display: none;
+
+          @include tab {
+               display: block;
+          }
+     }
+
+     @include tab {
+          font-size: 1.8rem;
+     }
+
+     @include sp {
+          font-size: 1.5rem;
+     }
+}
+
+.service-list-item {
+     font-weight: bold;
+     font-size: 1.3rem;
+
+     @include tab {
+          font-size: 1rem;
+     }
+
+     @include sp {
+          font-size: 0.8rem;
+     }
+}
+
+.service-recommend {
+     padding-top: 40px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     .service-text {
+          line-height: 1.8;
+          font-weight: bold;
+          font-size: 1.3rem;
+          border-bottom: 2px solid red;
+
+          @include tab {
+               font-size: 1rem;
+          }
+
+          @include sp {
+               font-size: 0.8rem;
+          }
+     }
+
+}

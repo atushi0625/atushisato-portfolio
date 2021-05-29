@@ -1,0 +1,89 @@
+/*--------------------------------
+ Works
+---------------------------------*/
+$pc: 1024px; // PC
+$tab: 768px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+     @media (max-width: ($pc)) {
+          @content;
+     }
+}
+
+@mixin tab {
+     @media (max-width: ($tab)) {
+          @content;
+     }
+}
+
+@mixin sp {
+     @media (max-width: ($sp)) {
+          @content;
+     }
+}
+
+.works {
+     background: linear-gradient(180deg,
+               rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 100%), #D07F88;
+}
+
+.works-list {
+     display: grid;
+     margin: 0 auto;
+     gap: 1vw;
+     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+     margin-top: 6%;
+     margin-bottom: 50px;
+}
+
+.works-item {
+
+     &:hover {
+          opacity: 0.8;
+     }
+}
+
+.works-img {
+     display: block;
+
+     img {
+          transition: .3s;
+          width: 100%;
+          height: 30vh;
+          vertical-align: bottom;
+          border-style: none;
+          object-fit: cover;
+          object-position: center;
+          border: 1px solid #e6e6e6;
+
+          &:hover {
+               transform: scale(1.1); //縮小の倍率
+               z-index: 3;
+               position: relative;
+               box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+          }
+
+     }
+}
+
+
+.works-name {
+     font-size: 0.75rem;
+     font-weight: bold;
+     margin-top: 8px;
+}
+
+
+//拡大画像がサムネイル画像の下にしているので1番上にくるように調整
+.lum-lightbox.lum-open {
+     z-index: 4;
+}
+
+
+//拡大したときの画像の最大サイズ
+.lum-lightbox-inner img {
+     max-width: 90vw;
+     max-height: 80vh;
+
+}

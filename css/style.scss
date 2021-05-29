@@ -1,0 +1,86 @@
+@use '../sass/header';
+@use '../sass/about';
+@use '../sass/contact';
+@use '../sass/footer';
+@use '../sass/main';
+@use '../sass/skill';
+@use '../sass/works';
+@use '../sass/responsive';
+@use '../sass/service';
+@use '../sass/message';
+
+
+body {
+
+     font-family: 'Roboto Condensed', "Helvetica Neue", Arial,
+          "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+     line-height: 1.8;
+     letter-spacing: 0.8px;
+     color: #333;
+}
+
+a {
+     transition: opacity 0.3s;
+     text-decoration: none;
+     color: #036991;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+     vertical-align: bottom;
+     border-style: none;
+}
+
+ul,
+li {
+     list-style: none;
+}
+
+
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+.wrapper {
+     overflow: hidden;
+
+}
+
+.section {
+     padding: 90px 0;
+
+     &:nth-child(4) {
+          padding: 0;
+     }
+}
+
+
+.inner {
+     max-width: 1340px;
+     margin: 0 auto;
+     padding: 0 40px;
+}
+
+/*--------------------------------
+ 見出し
+---------------------------------*/
+.title {
+     font-size: 5rem;
+     font-weight: bold;
+     line-height: 1;
+     margin-bottom: 30px;
+     text-align: center;
+     letter-spacing: 0.05em;
+     color: #333;
+     text-shadow: -4px 3px 0 #fff, -8px 6px 0 #000;
+}
+
+.title-caption {
+     text-align: center;
+     margin-bottom: 30px;
+     font-weight: bold;
+}
+
+.lead {
+     margin-bottom: 30px;
+}

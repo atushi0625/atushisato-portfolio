@@ -1,0 +1,64 @@
+/*--------------------------------
+ About
+---------------------------------*/
+$pc: 1024px; // PC
+$tab: 768px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+     @media (max-width: ($pc)) {
+          @content;
+     }
+}
+
+@mixin tab {
+     @media (max-width: ($tab)) {
+          @content;
+     }
+}
+
+@mixin sp {
+     @media (max-width: ($sp)) {
+          @content;
+     }
+}
+
+.about {
+     background: linear-gradient(180deg,
+               #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(24, 18, 25, 0.4);
+
+}
+
+.profile {
+     display: flex;
+     max-width: 100%;
+     margin: 0 auto;
+     justify-content: space-between;
+
+}
+
+
+.profile-body {
+     display: flex;
+     font-weight: bold;
+     flex-direction: column;
+     padding-left: 15%;
+     font-size: 1.2rem;
+
+}
+
+.profile-text {
+     padding-top: 10%;
+
+     @include pc {
+          padding-left: 0;
+     }
+}
+
+.profile-img {
+     width: 55%;
+}
+
+.profile-body p:not(:last-child) {
+     margin-bottom: 30px;
+}

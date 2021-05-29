@@ -1,0 +1,145 @@
+/*--------------------------------
+ Contact
+---------------------------------*/
+$pc: 1024px; // PC
+$tab: 767px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+     @media (max-width: ($pc)) {
+          @content;
+     }
+}
+
+@mixin tab {
+     @media (max-width: ($tab)) {
+          @content;
+     }
+}
+
+@mixin sp {
+     @media (max-width: ($sp)) {
+          @content;
+     }
+}
+
+.contact {
+     background: #EDDDF7;
+}
+
+.contact-title {
+     text-align: center;
+     margin-bottom: 30px;
+     font-weight: bold;
+
+     @include sp {
+          font-size: 0.875rem;
+     }
+}
+
+.contact-list {
+     text-align: center;
+}
+
+.contact-wrapper {
+     width: 100%;
+     background: #fff;
+     padding: 30px 30px;
+}
+
+.contact-item {
+     transition: all 0.3s;
+
+     &:hover {
+          opacity: 0.6;
+     }
+}
+
+
+.contact-item:not(:last-child) {
+     margin-right: 80px;
+
+     @include sp {
+          margin-right: 30px;
+     }
+}
+
+.contact-text {
+     margin-top: 10px;
+}
+
+/*フォーム全体*/
+form {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 10px 10px;
+}
+
+
+
+/*入力欄の装飾*/
+input[type="text"],
+input[type="email"],
+textarea {
+     background-color: #eefbfb;
+     border-radius: 3px;
+}
+
+
+/*お名前、メール蘭*/
+input[type="text"],
+input[type="email"] {
+     width: 400px;
+     height: 43px;
+     margin-top: 20px;
+
+
+     @include sp {
+          width: 250px;
+     }
+}
+
+
+/*お問い合わせ内容蘭*/
+
+textarea {
+     width: 400px;
+     height: 180px;
+     margin-top: 20px;
+
+     @include sp {
+          width: 250px;
+     }
+}
+
+
+
+
+/*同意チェックと送信ボタン*/
+.center {
+     margin-top: 27px;
+     text-align: center;
+
+}
+
+label {
+     font-size: 1rem;
+     font-weight: bold;
+}
+
+
+input[type="submit"] {
+     width: 155px;
+     height: 37px;
+     margin-top: 30px;
+     background: rgba(193, 163, 235, 0.77);
+     border-radius: 10px;
+     box-shadow: 0px 3px 6px #00000029;
+     opacity: 1;
+     color: #fff;
+     line-height: 1.4;
+     font-size: 0.875rem;
+     font-weight: bold;
+}

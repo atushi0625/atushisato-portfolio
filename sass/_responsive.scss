@@ -1,0 +1,106 @@
+/*media Queries 768
+----------------------------------------------------*/
+$pc: 1024px; // PC
+$tab: 768px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+     @media (max-width: ($pc)) {
+          @content;
+     }
+}
+
+@mixin tab {
+     @media (max-width: ($tab)) {
+          @content;
+     }
+}
+
+@mixin sp {
+     @media (max-width: ($sp)) {
+          @content;
+     }
+}
+
+
+@include tab {
+     body {
+          font-size: 13px;
+          line-height: 1.7;
+
+          .inner {
+               padding: 0 20px;
+          }
+
+
+          /* 見出し */
+          .title {
+               font-size: 3rem;
+               margin-bottom: 20px;
+          }
+
+          /* レイアウト */
+
+          .section {
+               padding: 60px 0;
+          }
+
+          /* ヘッダー */
+          .header .inner {
+               padding: 15px;
+          }
+
+          /*  メインビジュアル */
+          .main-visual {
+               height: 85vh;
+          }
+
+          .main-visual-title {
+               font-size: 30px;
+          }
+
+          .main-visual-subtitle {
+               font-size: 1rem;
+               margin-bottom: 20px;
+          }
+
+          /* Skill */
+          .skill-list {
+               display: block;
+               margin-bottom: 0;
+          }
+
+          .skill-item {
+               width: 100%;
+               margin-bottom: 35px;
+          }
+
+          .skill-item:last-child {
+               margin-bottom: 0;
+          }
+
+          /* About */
+          .profile {
+               display: block;
+          }
+
+          .profile-img {
+               width: 70%;
+               margin: 0 auto;
+               padding: 10px;
+          }
+
+          .profile-body {
+               padding-right: 20px;
+          }
+
+          .profile-body p:not(:last-child) {
+               margin-bottom: 20px;
+          }
+
+          /* フッター */
+          .footer {
+               padding: 20px;
+          }
+     }
+}

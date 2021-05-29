@@ -1,0 +1,103 @@
+/*--------------------------------
+ メインビジュアル
+---------------------------------*/
+$pc: 1024px; // PC
+$tab: 768px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+     @media (max-width: ($pc)) {
+          @content;
+     }
+}
+
+@mixin tab {
+     @media (max-width: ($tab)) {
+          @content;
+     }
+}
+
+@mixin sp {
+     @media (max-width: ($sp)) {
+          @content;
+     }
+}
+
+
+
+.main-visual {
+     object-fit: cover;
+     width: 100vw;
+     height: 100vh;
+     background-image: url(/img/main-bg-img.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-blend-mode: screen;
+     animation: bg-color 15s infinite;
+}
+
+@keyframes bg-color {
+     0% {
+          background-image: url(/img/main-bg-img.jpg);
+     }
+
+     12.5% {
+          background-color: #97101b4f;
+
+     }
+
+     25% {
+          background-color: #c3bbc42a;
+     }
+
+     37.5% {
+          background-image: url(/img/main-bg-img2.jpg);
+
+     }
+
+     50% {
+          background-color: #ff9f673f;
+     }
+
+     62.5% {
+          background-color: #73bbff56;
+     }
+
+     75% {
+          background-image: url(/img/main-bg-img3.jpg);
+     }
+
+     87.5% {
+          background-color: #d1bf1646;
+     }
+
+     100% {
+          background-image: url(/img/main-bg-img.jpg);
+
+     }
+}
+
+
+.main-visual-inner {
+     display: flex;
+     justify-content: center;
+     padding: 20px 20px 0;
+
+}
+
+.main-name-img {
+     margin-top: 140px;
+     width: 100%;
+     max-width: 700px;
+     vertical-align: bottom;
+     object-fit: cover;
+
+     @include tab {
+          max-width: 500px;
+     }
+
+     @include sp {
+          max-width: 300px;
+     }
+}
