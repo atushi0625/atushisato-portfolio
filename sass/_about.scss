@@ -40,15 +40,21 @@ $sp: 480px; // スマホ
 
 
 .profile-body {
+     background: #fff;
      display: flex;
      font-weight: bold;
      flex-direction: column;
      padding: 30px;
-     font-size: 1.2rem;
+     font-size: 1rem;
 
      @include pc {
+          margin-top: 20px;
           justify-content: center;
           align-items: center;
+     }
+
+     @include sp {
+          font-size: 0.8rem;
      }
 
 }
