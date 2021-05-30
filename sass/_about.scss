@@ -24,17 +24,18 @@ $sp: 480px; // スマホ
 }
 
 .about {
-     background: linear-gradient(180deg,
-               #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(24, 18, 25, 0.4);
-
+     background: #D6AECE;
 }
 
 .profile {
      display: flex;
-     max-width: 100%;
      margin: 0 auto;
-     justify-content: space-between;
+     justify-content: center;
 
+     @include pc {
+          flex-direction: column;
+          align-items: center;
+     }
 }
 
 
@@ -42,22 +43,17 @@ $sp: 480px; // スマホ
      display: flex;
      font-weight: bold;
      flex-direction: column;
-     padding-left: 15%;
+     padding: 30px;
      font-size: 1.2rem;
 
-}
-
-.profile-text {
-     padding-top: 10%;
-
      @include pc {
-          padding-left: 0;
+          justify-content: center;
+          align-items: center;
      }
+
 }
 
-.profile-img {
-     width: 55%;
-}
+
 
 .profile-body p:not(:last-child) {
      margin-bottom: 30px;

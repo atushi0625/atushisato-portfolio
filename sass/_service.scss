@@ -27,16 +27,19 @@ $sp: 480px; // スマホ
 
 
 .service-container {
-     background: rgba(255, 255, 255, 0.6);
      display: flex;
-     flex-direction: column;
      align-items: center;
      padding: 40px 0;
 
+     @include pc {
+          flex-direction: column;
+     }
+
      p {
-          padding-top: 30px;
+          padding-top: 10px;
           font-size: 1.3rem;
           font-weight: bold;
+          line-height: 2.3;
 
           @include tab {
                font-size: 1rem;
@@ -53,50 +56,28 @@ $sp: 480px; // スマホ
 
 }
 
-.service-title {
+.service-title-top {
      font-size: 2.3rem;
+     text-align: center;
 
-     br {
-          display: none;
-
-          @include tab {
-               display: block;
-          }
-     }
 
      @include tab {
-          font-size: 1.8rem;
+          font-size: 2rem;
      }
 
      @include sp {
-          font-size: 1.5rem;
+          font-size: 1.7rem;
      }
 }
 
-.service-list-item {
-     font-weight: bold;
-     font-size: 1.3rem;
-
-     @include tab {
-          font-size: 1rem;
-     }
-
-     @include sp {
-          font-size: 0.8rem;
-     }
+.service-img {
+     max-width: 800px;
 }
 
-.service-recommend {
-     padding-top: 40px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-
-     .service-text {
-          line-height: 1.8;
+.service-list {
+     p {
           font-weight: bold;
           font-size: 1.3rem;
-          border-bottom: 2px solid red;
 
           @include tab {
                font-size: 1rem;
@@ -104,6 +85,61 @@ $sp: 480px; // スマホ
 
           @include sp {
                font-size: 0.8rem;
+          }
+     }
+
+}
+
+.service-title {
+     font-size: 2rem;
+     padding: 20px;
+     text-align: center;
+
+     @include tab {
+          font-size: 1.7rem;
+     }
+
+     @include sp {
+          font-size: 1rem;
+     }
+}
+
+.service-recommend {
+     background: #D6AECE;
+     padding: 60px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     @include sp {
+          padding: 33px;
+     }
+
+     .service-text-list {
+          padding: 50px;
+          width: 100%;
+          background: #fff;
+
+          @include sp {
+               padding: 20px;
+          }
+     }
+
+     .service-text {
+          margin: 0 auto;
+          width: 50%;
+          line-height: 2;
+          font-weight: bold;
+          font-size: 1.3rem;
+          border-bottom: 2px solid red;
+
+          @include tab {
+               width: 60%;
+               font-size: 1rem;
+          }
+
+          @include sp {
+               font-size: 0.7rem;
           }
      }
 

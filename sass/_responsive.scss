@@ -51,9 +51,6 @@ $sp: 480px; // スマホ
           }
 
           /*  メインビジュアル */
-          .main-visual {
-               height: 85vh;
-          }
 
           .main-visual-title {
                font-size: 30px;
@@ -80,18 +77,16 @@ $sp: 480px; // スマホ
           }
 
           /* About */
-          .profile {
-               display: block;
-          }
 
           .profile-img {
-               width: 70%;
+               width: 80%;
                margin: 0 auto;
                padding: 10px;
           }
 
           .profile-body {
                padding-right: 20px;
+               font-size: 1rem;
           }
 
           .profile-body p:not(:last-child) {

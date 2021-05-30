@@ -52,10 +52,9 @@ new LuminousGallery(document.querySelectorAll(".works-img"), {},{
 
 //AOS.jsで全体をフワッとアニメーション
   AOS.init({
-    duration: 600,
-    delay: 300,
-    easing: 'ease-in',
-    placement: 'center-bottom',
-    once: false
+  duration: 1000,
+  easing: 'ease',
+  once: false,
+  anchorPlacement: 'bottom-center',
   });
 

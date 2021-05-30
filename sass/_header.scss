@@ -2,7 +2,7 @@
 ヘッダー
 ---------------------------------*/
 $pc: 1024px; // PC
-$tab: 830px; // タブレット
+$tab: 768px; // タブレット
 $sp: 480px; // スマホ
 
 @mixin pc {
@@ -81,6 +81,11 @@ $sp: 480px; // スマホ
           align-items: center;
           flex-direction: column;
           justify-content: center;
+          margin-top: 40px;
+     }
+
+     @include sp {
+          margin-top: 0;
      }
 }
 
@@ -221,7 +226,7 @@ $sp: 480px; // スマホ
 /*ハンバーガーアイコンボタンがクリックされたら発火するクラス*/
 .is-drawerActive {
      .sp-global-menu {
-          transform: skewX(0deg) translateX(0%);
+          transform: skewX(0deg) translateY(0%);
 
           opacity: 1;
           visibility: visible;
@@ -251,9 +256,6 @@ $sp: 480px; // スマホ
                transition-delay: .5s;
           }
 
-          .header-nav-item:nth-child(6) {
-               transition-delay: .6s;
-          }
 
 
      }

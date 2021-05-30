@@ -24,8 +24,9 @@ $sp: 480px; // スマホ
 }
 
 .works {
-     background: linear-gradient(180deg,
-               rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 100%), #D07F88;
+     background: #D6AECE;
+     // background: linear-gradient(180deg,
+     //           rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 100%), #D07F88;
 }
 
 .works-list {
@@ -50,7 +51,7 @@ $sp: 480px; // スマホ
      img {
           transition: .3s;
           width: 100%;
-          height: 30vh;
+          height: 100%;
           vertical-align: bottom;
           border-style: none;
           object-fit: cover;
