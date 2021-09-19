@@ -24,12 +24,11 @@ $sp: 480px; // スマホ
 }
 
 
-
 .main-visual {
      object-fit: cover;
      width: 100vw;
      height: 100%;
-     background-image: url(/img/main-bg-img.jpg);
+     background-image: url("//atushisatoportfolio.local/wp-content/themes/atushisato-portfolio/img/main-bg-img.jpg");
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
@@ -39,24 +38,24 @@ $sp: 480px; // スマホ
 
 @keyframes bg-color {
      0% {
-          background-image: url(/img/main-bg-img.jpg);
+          background-image: url("//atushisatoportfolio.local/wp-content/themes/atushisato-portfolio/img/main-bg-img.jpg");
      }
 
 
      37.5% {
-          background-image: url(/img/main-bg-img2.jpg);
+          background-image: url("//atushisatoportfolio.local/wp-content/themes/atushisato-portfolio/img/main-bg-img2.jpg");
 
      }
 
 
      75% {
-          background-image: url(/img/main-bg-img3.jpg);
+          background-image: url("//atushisatoportfolio.local/wp-content/themes/atushisato-portfolio/img/main-bg-img3.jpg");
      }
 
 
 
      100% {
-          background-image: url(/img/main-bg-img.jpg);
+          background-image: url("//atushisatoportfolio.local/wp-content/themes/atushisato-portfolio/img/main-bg-img.jpg");
 
      }
 }

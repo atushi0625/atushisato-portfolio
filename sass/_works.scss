@@ -23,6 +23,8 @@ $sp: 480px; // スマホ
      }
 }
 
+
+
 .works {
      background: #D6AECE;
 }
@@ -85,4 +87,85 @@ $sp: 480px; // スマホ
      max-width: 90vw;
      max-height: 80vh;
 
+}
+
+.works-item-wrap {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     background-color: #D6AECE;
+     padding-top: 150px;
+
+}
+
+.works-item-img {
+     width: 70%;
+}
+
+.works-item-title {
+     padding: 10px 0;
+     text-align: center;
+}
+
+.text {
+     width: 70%;
+     padding: 50px 0;
+     line-height: 2;
+}
+
+
+
+.industry {
+     padding: 10px;
+     font-weight: bold;
+     background: #000;
+     color: #fff;
+     vertical-align: middle;
+}
+
+.works-item-text {
+     padding: 10px 0;
+     font-size: 1.2rem;
+     line-height: 1.7;
+
+     @include sp {
+          font-size: 0.8rem;
+     }
+}
+
+.page-nav {
+     display: flex;
+     justify-content: space-between;
+}
+
+.page-link {
+     vertical-align: middle;
+     padding: 5px;
+     font-weight: bold;
+     background: #D6AECE;
+     color: #fff;
+     font-size: 1.3rem;
+
+     &:hover {
+          opacity: 0.7;
+     }
+}
+
+.prev-icon {
+
+     &:before {
+          font-family: "Font Awesome 5 Free";
+          content: '\f104';
+          vertical-align: middle;
+     }
+
+}
+
+.next-icon {
+     &:after {
+          font-family: "Font Awesome 5 Free";
+          content: '\f105';
+          vertical-align: middle;
+
+     }
 }

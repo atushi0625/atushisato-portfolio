@@ -117,12 +117,6 @@ textarea {
 
 
 
-/*同意チェックと送信ボタン*/
-.center {
-     margin-top: 27px;
-     text-align: center;
-
-}
 
 label {
      font-size: 1rem;
@@ -131,6 +125,8 @@ label {
 
 
 input[type="submit"] {
+     display: block;
+     text-align: center;
      width: 155px;
      height: 37px;
      margin-top: 30px;

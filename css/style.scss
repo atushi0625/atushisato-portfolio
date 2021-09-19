@@ -7,11 +7,9 @@
 @use '../sass/works';
 @use '../sass/responsive';
 @use '../sass/service';
-@use '../sass/message';
 
 
 body {
-
      font-family: 'Roboto Condensed', "Helvetica Neue", Arial,
           "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
      line-height: 1.8;
@@ -46,9 +44,16 @@ li {
 
 }
 
+
+
+
 .section {
-     padding: 90px 0;
+     padding: 160px 0;
+     margin-top: -30px;
 }
+
+
+
 
 
 .inner {
