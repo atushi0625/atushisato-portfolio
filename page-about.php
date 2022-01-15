@@ -6,7 +6,7 @@
 </head>
 
 <?php get_template_part('includes/header'); ?>
-　　<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <!-- about -->
 <section class="about section" id="about">
      <div class="inner">
@@ -21,7 +21,7 @@
                               Atushi Sato <br />
                               1989年生まれ<br />
                               秋田県出身・東京都在住<br />
-                              趣味はキックボクシング　
+                              趣味はキックボクシング
                          </p>
                          <p>こんにちは。Atushiと申します。</p>
                          <p>

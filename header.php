@@ -3,7 +3,7 @@
 <meta property="og:type" content="portfolio site" />
 <meta property="og:title" content="Atushi Satoのポートフォリオ制作" />
 <meta name="robots" content="noindex" />
-<meta property="og:image" content="img/main-name.jpg" />
+<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/main-name.jpg" />
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.3/css/all.css">
 <link href="//fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
 <link href="//fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet" />

@@ -23,115 +23,82 @@ $sp: 480px; // スマホ
      }
 }
 
+.service {
+     object-fit: cover;
+     width: 100vw;
+     height: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
 
+     background-image: url("/wp-content/themes/atushisato-portfolio/img/service.jpg");
 
+     .service-list-box {
+          margin-top: 100px;
 
-.service-container {
-     display: flex;
-     align-items: center;
-     padding: 40px 0;
-
-     @include pc {
-          flex-direction: column;
      }
 
-     p {
-          padding-top: 10px;
-          font-size: 1.3rem;
-          font-weight: bold;
-          line-height: 2.3;
+     .service-lists {
+          display: flex;
+          justify-content: space-around;
+          // justify-content: center;
+          flex-wrap: wrap;
 
           @include tab {
-               font-size: 1rem;
-          }
-     }
-}
-
-.service-title-top {
-     font-size: 2.3rem;
-     text-align: center;
-
-
-     @include tab {
-          font-size: 2rem;
-     }
-
-     @include sp {
-          font-size: 1.7rem;
-     }
-}
-
-.service-img {
-     max-width: 800px;
-}
-
-.service-list {
-     p {
-          font-weight: bold;
-          font-size: 1.3rem;
-
-          @include tab {
-               font-size: 1rem;
+               align-items: center;
+               flex-direction: column;
           }
 
-          @include sp {
-               font-size: 0.8rem;
-          }
-     }
-
-}
-
-.service-title {
-     font-size: 2rem;
-     padding: 20px;
-     text-align: center;
-
-     @include tab {
-          font-size: 1.7rem;
-     }
-
-     @include sp {
-          font-size: 1rem;
-     }
-}
-
-.service-recommend {
-     background: #D6AECE;
-     padding: 60px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-
-     @include sp {
-          padding: 33px;
-     }
-
-     .service-text-list {
-          padding: 50px;
-          width: 100%;
-          background: #fff;
-
-          @include sp {
+          .service-list {
+               background-color: #fff;
+               margin-top: 30px;
+               max-width: 350px;
+               width: 30%;
                padding: 20px;
+               box-shadow: 0 0 30px rgb(0 0 0 / 16%);
+
+               @include tab {
+                    width: 100%;
+                    max-width: 450px;
+
+               }
+
+          }
+
+          .service-list-name {
+               text-align: center;
+               font-weight: bold;
+               font-size: 1.5rem;
+
+               @include tab {
+                    font-size: 1.3rem;
+               }
+
+          }
+
+          .service-list-text {
+               padding-top: 10px;
+               font-size: 1rem;
+               font-weight: bold;
+               line-height: 2.3;
+
+               @include tab {
+                    font-size: 0.8rem;
+               }
           }
      }
 
-     .service-text {
-          margin: 0 auto;
-          width: 50%;
-          line-height: 2;
-          font-weight: bold;
-          font-size: 1.3rem;
-          border-bottom: 2px solid red;
+     .service-title {
+          font-size: 2.3rem;
+          text-align: center;
+
 
           @include tab {
-               width: 60%;
-               font-size: 1rem;
+               font-size: 2rem;
           }
 
           @include sp {
-               font-size: 0.7rem;
+               font-size: 1.7rem;
           }
      }
-
 }

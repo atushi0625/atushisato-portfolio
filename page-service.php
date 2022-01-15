@@ -11,39 +11,68 @@
           <section class="service section" id="service">
                <div class="inner">
                     <h2 class="title"><?php the_title(); ?></h2>
-
-
-                    <h2 class="service-title-top">Webサイト制作</h2>
-                    <div class="service-container">
-                         <div class="service-img" data-aos="flip-left">
-                              <?php $service_img = get_field('サービス画像');
-                              $url = $service_img['url'];
-                              $alt = $service_img['alt']; ?>
-
-
-                              <img src="<?php echo $url ?>" alt="<?php echo $alt ?>">
-                         </div>
-                         <div class="service-list" data-aos="zoom-in-left" data-aos-delay="400">
-                              <p>デザインに沿ってHTML＆CSSでコーディングしていきます</p>
-                              <p>JavaScriptとjQueryを用いて動きのあるサイトに仕上げます</p>
-                              <p>どのデバイスにでも閲覧できるようレスポンシブ対応にします</p>
-                              <p>WordPressでWebサイトを構築いたします</p>
-                              <p>簡易的なお問い合わせフォームも設置いたします</p>
-                         </div>
+                    <div class="service-list-box">
+                         <h2 class="service-title">Webサイト制作</h2>
+                         <ul class="service-lists">
+                              <li class="service-list">
+                                   <div class="service-list_inner">
+                                        <p class="service-list-name">コーディング</p>
+                                        <p class="service-list-text">HTML&CSSで適切なコーディングを行います。<br>
+                                             XDやPhotoshopで作成したデザインカンプからのコーディングが可能です。<br>
+                                             軽度なコードの修正などにも対応しています。
+                                        </p>
+                                   </div>
+                              </li>
+                              <li class="service-list">
+                                   <div class="service-list_inner">
+                                        <p class="service-list-name">WordPress</p>
+                                        <p class="service-list-text">WordPressでのサイト構築やテーマのカスタマイズ、<br>
+                                             静的なサイトのWordPress化も行います。<br>
+                                        </p>
+                                   </div>
+                              </li>
+                              <li class="service-list">
+                                   <div class="service-list_inner">
+                                        <p class="service-list-name">アニメーション実装</p>
+                                        <p class="service-list-text"> JavaScriptとjQueryを用いて動きのあるサイトに仕上げることができます。
+                                             Pluginを用いての実装も可能です。
+                                             <br>
+                                        </p>
+                                   </div>
+                              </li>
+                         </ul>
                     </div>
-                    <div class="service-recommend" data-aos="fade-up" data-aos-delay="500">
-                         <div class="service-text-list">
-                              <h2 class="service-title">
-                                   こんな方でもお気軽にお問い合わせください！
-                              </h2>
-                              <p class="service-text">
-                                   ホームページ作成にあまり費用をかけたくない方
-                              </p>
-                              <p class="service-text">インターネットに関して疎い方</p>
-                              <p class="service-text">
-                                   デザインはできるけどコーディングが不安な方
-                              </p>
-                         </div>
+                    <div class="service-list-box">
+                         <h2 class="service-title">ECサイト制作</h2>
+                         <ul class="service-lists">
+                              <li class="service-list">
+                                   <div class="service-list_inner">
+                                        <p class="service-list-name">Shopify</p>
+                                        <p class="service-list-text">Shopifyを用いてECサイトを構築します。<br>
+                                             Shopifyで既存で用意されているテーマを使って制作します。<br>
+                                             基本NoCodeでの制作になりますが、HTML&CSSでカスタマイズを加えることができます。
+                                        </p>
+                                   </div>
+                              </li>
+                              <li class="service-list">
+                                   <div class="service-list_inner">
+                                        <p class="service-list-name">Liquidコードの修正</p>
+                                        <p class="service-list-text">Shopifyで使用されているLiquidの知識があるので修正やカスタマイズをすることができます。<br>
+                                             オリジナルのsectionやblocksなども作成できます。<br>
+                                             ※フルスクラッチ開発はできかねます。
+                                        </p>
+                                   </div>
+                              </li>
+                              <!-- <li class="service-list">
+                                   <div class="service-list_inner">
+                                        <p class="service-list-name">アニメーション実装</p>
+                                        <p class="service-list-text"> JavaScriptとjQueryを用いて動きのあるサイトに仕上げることができます。
+                                             Pluginを用いての実装も可能です。
+                                             <br>
+                                        </p>
+                                   </div>
+                              </li> -->
+                         </ul>
                     </div>
                </div>
           </section>
