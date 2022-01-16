@@ -27,15 +27,13 @@ $sp: 480px; // スマホ
 
 .works {
      background: #D6AECE;
+     margin: 0 auto;
 }
 
 .works-list {
      display: grid;
-     margin: 0 auto;
      gap: 1vw;
      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-     margin-top: 6%;
-     margin-bottom: 50px;
 }
 
 .works-item {

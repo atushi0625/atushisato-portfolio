@@ -33,22 +33,31 @@ $sp: 480px; // スマホ
 
 
 .sns-icons {
+     max-width: 250px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 
      @include tab {
           z-index: 4;
+     }
+
+     @include sp {
+          max-width: 150px;
      }
 }
 
 .sns-link {
      transition: all 0.3s;
+     display: inline-block;
 
-     &:not(:first-child) {
-          padding-left: 30px;
 
-          @include sp {
-               padding-left: 15px;
-          }
+     @include sp {
+          width: 40px;
+          height: 40px;
      }
+
 
      &:hover {
           opacity: 0.6;
@@ -156,6 +165,12 @@ $sp: 480px; // スマホ
      height: 50px;
      border: 2px solid #333333;
      transition: all .3 ease-in-out;
+
+     @include sp {
+          width: 40px;
+          height: 40px;
+          top: 30px;
+     }
 
      &:hover,
      &:focus {

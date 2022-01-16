@@ -17,13 +17,13 @@
                               SNSでもお受付してます。
                          </p>
                          <div class="contact-list">
-                              <a class="contact-item" href="https://www.twitter.com/atushisato0625" target="_blank" rel="noopener">
+                              <a class="sns-link" href="https://www.twitter.com/atushisato0625" target="_blank" rel="noopener">
                                    <img src="<?php echo get_template_directory_uri(); ?>/img/Twitter-icon.png" alt="twitter公式アイコン" />
                               </a>
-                              <a class="contact-item" href="https://www.instagram.com/atushi213/" target="_blank" rel="noopener">
+                              <a class="sns-link" href="https://www.instagram.com/atushi213/" target="_blank" rel="noopener">
                                    <img src="<?php echo get_template_directory_uri(); ?>/img/Instagram-icon.png" alt="instagram公式アイコン" />
                               </a>
-                              <a class="contact-item" href="https://www.facebook.com/atushi0213" target="_blank" rel="noopener">
+                              <a class="sns-link" href="https://www.facebook.com/atushi0213" target="_blank" rel="noopener">
                                    <img src="<?php echo get_template_directory_uri(); ?>/img/facebook-icon.png" alt="facebook公式アイコン" />
                               </a>
                          </div>

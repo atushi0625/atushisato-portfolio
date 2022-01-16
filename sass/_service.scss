@@ -31,20 +31,25 @@ $sp: 480px; // スマホ
      background-repeat: no-repeat;
      background-position: center;
 
-     background-image: url("/wp-content/themes/atushisato-portfolio/img/service.jpg");
+     // background-image: url("/wp-content/themes/atushisato-portfolio/img/service.jpg");
 
      .service-list-box {
           margin-top: 100px;
 
      }
 
+     .service-list-inner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
      .service-lists {
           display: flex;
           justify-content: space-around;
-          // justify-content: center;
           flex-wrap: wrap;
 
-          @include tab {
+          @include pc {
                align-items: center;
                flex-direction: column;
           }
@@ -57,7 +62,7 @@ $sp: 480px; // スマホ
                padding: 20px;
                box-shadow: 0 0 30px rgb(0 0 0 / 16%);
 
-               @include tab {
+               @include pc {
                     width: 100%;
                     max-width: 450px;
 
@@ -101,4 +106,50 @@ $sp: 480px; // スマホ
                font-size: 1.7rem;
           }
      }
+}
+
+.service-price {
+     margin: 50px auto 0;
+     width: 100%;
+
+     .price-list {
+          display: flex;
+          border-top: 2px solid #e5e5e5;
+
+          &:last-of-type {
+               border-bottom: 2px solid #e5e5e5;
+          }
+
+          dt {
+               width: 40%;
+               padding: 20px 30px;
+               font-weight: bold;
+               font-size: 1.2rem;
+
+               @include sp {
+                    font-size: 1.1rem;
+                    padding: 5px 0;
+               }
+          }
+
+          dd {
+               width: 60%;
+               padding: 20px 30px;
+               font-weight: bold;
+               font-size: 1rem;
+
+               @include sp {
+                    padding: 5px 0;
+                    text-align: center;
+               }
+          }
+
+     }
+
+     .price-list-text {
+          margin-top: 30px;
+          font-weight: bold;
+          font-size: 1rem;
+     }
+
 }
