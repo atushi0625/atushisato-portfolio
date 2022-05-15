@@ -68,9 +68,14 @@ $sp: 480px; // スマホ
 
 
 .works-name {
-     font-size: 0.75rem;
+     font-size: 1rem;
      font-weight: bold;
-     margin-top: 8px;
+     margin-top: 10px;
+}
+
+.works-item-link {
+     margin-top: 5px;
+     display: block;
 }
 
 
@@ -134,6 +139,7 @@ $sp: 480px; // スマホ
 .page-nav {
      display: flex;
      justify-content: space-between;
+     margin-bottom: 20px;
 }
 
 .page-link {

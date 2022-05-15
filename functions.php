@@ -40,3 +40,6 @@ function get_eyecatch_with_default()
 
      return $img;
 };
+
+
+define('WP_SCSS_ALWAYS_RECOMPILE', true);

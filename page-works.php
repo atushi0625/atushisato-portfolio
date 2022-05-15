@@ -35,7 +35,7 @@
                               <?php $site_link = get_field('リンク'); ?>
 
                               <a href="<?php echo $site_link['url']; ?>" target="<?php echo $site_link['target']; ?>"><?php echo $site_link['title']; ?></a>
-                              　<a href="<?php the_permalink(); ?>"><?php the_title(); ?>をもっと詳しくみる</a>
+                              <a href="<?php the_permalink(); ?>"><?php the_title(); ?>をもっと詳しくみる</a>
 
                          </div>
                          <?php wp_reset_postdata(); ?>

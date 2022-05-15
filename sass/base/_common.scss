@@ -1,19 +1,8 @@
-@use '../sass/header';
-@use '../sass/about';
-@use '../sass/contact';
-@use '../sass/footer';
-@use '../sass/main';
-@use '../sass/skill';
-@use '../sass/works';
-@use '../sass/responsive';
-@use '../sass/service';
-
-
 body {
      font-family: 'Roboto Condensed', "Helvetica Neue", Arial,
           "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-     line-height: 1.8;
-     letter-spacing: 0.8px;
+     line-height: 1;
+     letter-spacing: 0.5px;
      color: #333;
 }
 
@@ -74,12 +63,15 @@ li {
      letter-spacing: 0.05em;
      color: #333;
      text-shadow: -4px 3px 0 #fff, -8px 6px 0 #000;
+     text-transform: uppercase;
 }
 
 .title-caption {
+     font-size: 1.2rem;
      text-align: center;
-     margin-bottom: 30px;
+     margin-bottom: 35px;
      font-weight: bold;
+     line-height: 1.4;
 }
 
 .lead {

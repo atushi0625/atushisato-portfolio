@@ -1,6 +1,4 @@
-/*--------------------------------
- メインビジュアル
----------------------------------*/
+/*メインビジュアル*/
 $pc: 1024px; // PC
 $tab: 768px; // タブレット
 $sp: 480px; // スマホ
@@ -28,7 +26,6 @@ $sp: 480px; // スマホ
      object-fit: cover;
      width: 100vw;
      height: 100vh;
-     background-image: url("/wp-content/themes/atushisato-portfolio/img/main-bg-img.jpg");
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
