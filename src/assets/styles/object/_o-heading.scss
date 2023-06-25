@@ -1,0 +1,17 @@
+@use '../foundation/mixin' as *;
+
+
+/*--------------------------------
+ 見出し
+---------------------------------*/
+.title {
+  margin-bottom: eight(4);
+  font-weight: weight(bold);
+  line-height: 1;
+  letter-spacing: 0.3em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include rem(40);
+  text-shadow: -4px 3px 0 #fff, -8px 6px 0 #000;
+}

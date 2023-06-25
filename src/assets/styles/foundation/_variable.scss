@@ -1,0 +1,48 @@
+
+//////////////////////
+// weight
+//////////////////////
+$font-weights: (
+  thin: 100,
+  exlight: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  exbold: 800,
+  black: 900,
+);
+
+/////////////////////////////////////////////////////
+//
+//  Base
+//
+/////////////////////////////////////////////////////
+$base-vars: (
+  fontsize: 62.5%,
+  baseWidth: 1600px,
+  contentWidth: 1080px,
+  viewport: 768,
+);
+
+//////////////////////
+// color
+//////////////////////
+$colors: (
+  base-color: #333,
+  // c_black1: #0001a,
+  // c_black2: #666,
+  c_blue1: #3857a8,
+  c_blue2: #0b318f,
+  c_green1: #21bc7a,
+  c_green2: #00ac60,
+  c_green3: #00a040,
+  c_white1: #f5f5f5,
+  c_white2: #f6f3f3,
+  c_white3: #ebf6f1,
+  c_gray1: #ccc,
+  c_gray2: #aaa,
+  c_gray3: #ddd,
+  c_gray4: #999,
+);

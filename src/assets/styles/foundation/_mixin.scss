@@ -1,0 +1,114 @@
+@use './variable' as *;
+@use 'sass:map';
+@use 'sass:math';
+
+
+@function weight($key) {
+  @return map.get($font-weights, $key);
+}
+
+@function basevar($key) {
+  @return map.get($base-vars, $key);
+}
+
+@function colors($key) {
+  @return map.get($colors, $key);
+}
+
+@function vw($px, $width: 'viewport', $important: false) {
+  $size: $px;
+  $vw: math.div($size, basevar($width)) * 100;
+  $vw: math.floor($vw * 100);
+  $vw: math.div($vw, 100) + vw;
+  @if $important == true {
+    $vw: $vw + '!important';
+  }
+  @return $vw;
+}
+
+
+//=================================
+// letter-spacing
+//=================================
+@function spacing($space, $size) {
+  @return calc($space / $size * 1em);
+  // @return calc($space / 1000 * 1em);
+}
+
+
+
+@function line($size, $height) {
+  $lh: math.div($height, $size);
+  $lh: math.floor($lh * 100);
+  @return math.div($lh, 100);
+}
+
+@mixin rem($size) {
+  font-size: math.div($size, 10) + rem;
+}
+
+//////////////////////
+// font
+//////////////////////
+@mixin font($font) {
+  @if $font == notoserif {
+    font-family: 'Noto Serif JP', sans-serif;
+  }
+  @if $font == lato {
+    font-family: 'Lato', sans-serif;
+  }
+  @if $font == robotoc {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+}
+
+
+
+/* pcのみホバーする */
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+  // IE11
+  @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+
+
+/*  @include mq(mid)(pcまたはsp) {
+  プロパティ: 値;
+  }
+  tabの場合はmqのみ
+   */
+$breakpoints: (
+  'sp': '(max-width: 375px)',
+  'tab': '(max-width: 768px)',
+  'mid': '(max-width: 1080px)',
+  'pc': '(min-width: 768px)',
+) !default;
+@mixin mq($breakpoint: tab) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+// 8の倍数計算 eight(1,4) = 8px 32px
+$num: 8;
+@function eight($value1: null, $value2: null, $value3: null, $value4: null) {
+  @if ($value2 == null and $value3 == null and $value4 == null) {
+    @return $value1 * $num + px;
+  }@else if ($value3 == null and $value4 == null) {
+    @return $value1 * $num + px $value2 * $num + px;
+  }@else if ($value4 == null) {
+    @return $value1 * $num + px $value2 * $num + px $value3 * $num + px;
+  }@else {
+    @return $value1 * $num + px $value2 * $num + px $value3 * $num + px $value4 * $num + px;
+  }
+}

@@ -1,0 +1,19 @@
+@use '../foundation/mixin' as *;
+
+.main-visual {
+  position: relative;
+  height: 100vh;
+}
+
+.main-visual-inner {
+  width: 100%;
+}
+
+.main-name-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: min(90%,570px);
+  transform: translate(-50%,-50%);
+}

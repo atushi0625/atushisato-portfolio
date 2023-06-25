@@ -1,0 +1,37 @@
+@use '../foundation/mixin' as *;
+
+
+.about {
+  background-color: #d6aece;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.profile-text {
+  p {
+    line-height: 1.5;
+  }
+}
+
+
+.profile-body {
+  display: flex;
+  flex-direction: column;
+  padding: eight(4);
+  background: #fff;
+
+  @include rem(16);
+  @include mq {
+    @include rem(14);
+  }
+}
+
+
+
+.profile-body p:not(:last-child) {
+  margin-bottom: eight(4);
+}
